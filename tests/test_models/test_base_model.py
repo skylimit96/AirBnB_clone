@@ -7,8 +7,8 @@ classes:
     to_dict
 """
 import os
-import models
 import unittest
+import models
 from datetime import datetime
 from time import sleep
 from models.base_model import BaseModel
