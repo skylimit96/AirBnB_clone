@@ -38,7 +38,7 @@ class BaseModel:
         """Returns the string representation of our BaseModel"""
         clname = self.__class__.__name__
         return "[{}] ({}) {}".format(clname, self.id, self.__dict__)
-    
+
     def to_dict(self):
         """Return the dict of our BaseModel.
 
