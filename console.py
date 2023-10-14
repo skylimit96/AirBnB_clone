@@ -24,6 +24,7 @@ def parse(arg):
         retl.append(curly_braces.group())
         return retl
 
+
 class HBNBCommand(cmd.Cmd):
     """Defines the HBNB cmd interpreter.
 
@@ -66,12 +67,12 @@ class HBNBCommand(cmd.Cmd):
                     return argdict[command[0]](call)
         print("*** Unknown syntax: {}".format(arg))
         return False
-    
+
     def do_EOF(self, arg):
         """EOF signal to exit the program."""
         print("")
         return True
-    
+
     def do_quit(self, arg):
         """Quit command to exit the program."""
         return True
